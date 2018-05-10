@@ -19,6 +19,16 @@
         <input type="url" name="img" placeholder="Image">
         <button type="submit">SUBMIT</button>
       </form>
+      <form onsubmit="app.controllers.houseController.addHouse(event)">
+        <input type="number" name="bedrooms" placeholder="bedrooms">
+        <input type="number" name="bathrooms" placeholder="bathrooms">
+        <input type="number" name="year" placeholder="year">
+        <input type="number" name="levels" placeholder="levels">
+        <input type="number" name="price" placeholder="price">
+        <input type="description" name="make" placeholder="description">
+        <input type="url" name="img" placeholder="Image">
+        <button type="submit">SUBMIT</button>
+      </form>
     </section>
     <section id="cars">
       <!-- <div>
@@ -29,14 +39,32 @@
         <h3>Price: </h3>
       </div> -->
     </section>
+ 
+    <section id="houses">
+      <!-- <div>
+        <img src="//placehold.it/100x100" alt="">
+        <h3>Rooms: </h3>
+        <h3>Bath: </h3>
+        <h3>Year Built: </h3>
+        <h3>SQFT: </h3>
+        <h3>Lot Size:</h3>
+        <h3>Price: </h3>
+      </div> -->
+    </section>
 
 
+    <!--EXTERNAL REFERENCES-->
+
+    <!--JQUERY-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <!-- SERVICES -->
     <script src="app/CarService.js"></script>
+    <script src="app/HouseService.js"></script>
 
     <!-- CONTROLLERS -->
     <script src="app/CarController.js"></script>
+    <script src="app/HouseController.js"></script>
 
     <!-- INITIALIZE APP -->
     <script src="app/app.js"></script>
