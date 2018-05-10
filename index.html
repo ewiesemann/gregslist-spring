@@ -1,47 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>GregsList</title>
 </head>
+
 <body>
-    <section>
-      <h1>Welcome to Gregslist</h1>
-    </section>
-    <section>
-      <form onsubmit="app.controllers.carController.addCar(event)">
-        <input type="text" name="make" placeholder="make">
-        <input type="text" name="model" placeholder="model">
-        <input type="number" name="year" placeholder="year">
-        <input type="number" name="price" placeholder="price">
-        <input type="url" name="img" placeholder="Image">
+  <section>
+    <h1>Welcome to Gregslist</h1>
+  </section>
+  <section>
+    <form onsubmit="app.controllers.carController.addCar(event)">
+      <input type="text" name="make" placeholder="make">
+      <input type="text" name="model" placeholder="model">
+      <input type="number" name="year" placeholder="year">
+      <input type="number" name="price" placeholder="price">
+      <input type="url" name="img" placeholder="Image">
+      <button type="submit">SUBMIT</button>
+    </form>
+    <form onsubmit="app.controllers.houseController.addHouse(event)">
+      <input type="number" name="bedrooms" placeholder="bedrooms">
+      <input type="number" name="bathrooms" placeholder="bathrooms">
+      <input type="number" name="year" placeholder="year">
+      <input type="number" name="levels" placeholder="levels">
+      <input type="number" name="price" placeholder="price">
+      <input type="description" name="make" placeholder="description">
+      <input type="url" name="img" placeholder="Image">
+      <button type="submit">SUBMIT</button>
+    </form>
+    <form onsubmit="app.controllers.jobController.addJob(event)">
+        <input type="text" name="company" placeholder="company">
+        <input type="text" name="jobTitle" placeholder="job title">
+        <input type="number" name="hours" placeholder="hours">
+        <input type="number" name="rate" placeholder="rate">
+        <input type="text" name="description" placeholder="description">
         <button type="submit">SUBMIT</button>
       </form>
-      <form onsubmit="app.controllers.houseController.addHouse(event)">
-        <input type="number" name="bedrooms" placeholder="bedrooms">
-        <input type="number" name="bathrooms" placeholder="bathrooms">
-        <input type="number" name="year" placeholder="year">
-        <input type="number" name="levels" placeholder="levels">
-        <input type="number" name="price" placeholder="price">
-        <input type="description" name="make" placeholder="description">
-        <input type="url" name="img" placeholder="Image">
-        <button type="submit">SUBMIT</button>
-      </form>
-    </section>
-    <section id="cars">
-      <!-- <div>
+  </section>
+  <section id="cars">
+    <!-- <div>
         <img src="//placehold.it/100x100" alt="">
         <h3>Make: </h3>
         <h3>Model: </h3>
         <h3>Year: </h3>
         <h3>Price: </h3>
       </div> -->
-    </section>
- 
-    <section id="houses">
-      <!-- <div>
+  </section>
+
+  <section id="houses">
+    <!-- <div>
         <img src="//placehold.it/100x100" alt="">
         <h3>Rooms: </h3>
         <h3>Bath: </h3>
@@ -50,23 +60,26 @@
         <h3>Lot Size:</h3>
         <h3>Price: </h3>
       </div> -->
-    </section>
+  </section>
 
 
-    <!--EXTERNAL REFERENCES-->
+  <!--EXTERNAL REFERENCES-->
 
-    <!--JQUERY-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!--JQUERY-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-    <!-- SERVICES -->
-    <script src="app/CarService.js"></script>
-    <script src="app/HouseService.js"></script>
+  <!-- SERVICES -->
+  <script src="app/CarService.js"></script>
+  <script src="app/HouseService.js"></script>
+  <script src="app/jobservice.js"></script>
 
-    <!-- CONTROLLERS -->
-    <script src="app/CarController.js"></script>
-    <script src="app/HouseController.js"></script>
+  <!-- CONTROLLERS -->
+  <script src="app/CarController.js"></script>
+  <script src="app/HouseController.js"></script>
+  <script src="app/jobcontroller.js"></script>
 
-    <!-- INITIALIZE APP -->
-    <script src="app/app.js"></script>
+  <!-- INITIALIZE APP -->
+  <script src="app/app.js"></script>
 </body>
+
 </html>
